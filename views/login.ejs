@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"> -->
+</head>
+
+<body>
+
+    <ul>
+    <% if(messages.success_msg) { %>
+
+        <li class="success-color"><%= messages.success_msg %></li>
+        <% } %>
+    </ul>
+
+    <ul>
+
+        <% if(messages.error){%>
+            <li class="error-color"><%= messages.error %></li>
+
+       <% } %>
+    </ul>
+
+    <div class="login-here">
+        <h1>LOGIN</h1>
+    </div>
+    <form class="form" action="/users/login" method="POST">
+       
+        <div class="input_group">
+        <div>
+            <input class="Email" type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+
+        <div>
+            <input class="Password" type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        
+
+        <div >
+            <input class="submit-button" type="submit" value="Login">
+        </div>
+        
+
+        <a class="link" href="/users/register">Click Here To Register Please!!!</a>
+        </div>
+    </form>
+
+</body>
+
+</html>

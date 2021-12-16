@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+</head>
+<body>
+    <div class="logout">
+        <a href="/users/logout">Logout</a>
+    </div>
+    
+     <div class="bar">
+        <div class="n1">
+            <h2>MUSIC</h2>
+        </div>
+
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/users/dashboard">DASHBOARD</a></li>
+            <li><a href="/users/music">MUSIC</a></li>
+            <li><a href="/users/upload">UPLOAD</a></li>
+            <li><a href="/users/about">ABOUT</a></li>
+            <li><a href="/users/contact">CONTACT</a></li>
+            
+        </ul>
+            <div class="c1">
+                <center><img class="image2" src="/images/musiclogo.jfif"></center>
+                <div>
+                    <h1 id="greetings">Hello <%= user.charAt(0).toUpperCase() + user.slice(1) %>
+                    </h1>
+                </div>
+                <div class="txt">
+                    <center>
+                        <h1 id="latest">Latest Songs</h1>
+                        <a href="music"><span>LISTEN & DOWNLOAD</span></a>
+                    </center>
+                </div>
+            </div>
+
+    </div>
+    
+
+</body>
+</html>

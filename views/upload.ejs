@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>upload</title>
+  <!--AOS-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" type="text/css" href="/style/style.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
+</head>
+<body>
+  <div class="bar">
+    <div class="n1">
+      <h2>MUSIC</h2>
+    </div>
+    <ul>
+      <li><a href="/">HOME</a></li>
+      <li><a href="/users/dashboard">DASHBOARD</a></li>
+      <li><a href="/users/music">MUSIC</a></li>
+      <li><a href="/users/upload">UPLOAD</a></li>
+      <li><a href="/users/about">ABOUT</a></li>
+      <li><a href="/users/contact">CONTACT</a></li>
+  
+    </ul>
+    <div class="c1">
+      <center><img class="image2" src="/images/musiclogo.jfif"></center>
+
+  <div class="wrapper">
+    <header>Please Upload Your Music Here...</header>
+    <form action="#" method="post">
+      <input class="file-input" accept="audio/*" type="file" name="file" hidden>
+      <i class="fas fa-cloud-upload-alt" id="cloud"><img id="image" src="/images/upload.jpg"></i>
+      <p>Browse File to Upload</p>
+    </form>
+    <section class="progress-area"></section>
+    <section class="uploaded-area"></section>
+  </div>
+
+  <script src="/script.js"></script>
+
+</body>
+</html>
